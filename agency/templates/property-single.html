@@ -2,9 +2,8 @@
 
 {% load static %}
 
-
 {% block content %}
-  
+
 
 <body class="property-single-page">
 
@@ -29,7 +28,7 @@
               <li><a href="#">Trending</a></li>
               <li><a href="#">Latest News</a></li>
               <li><a href="#">Interior Designs</a></li>
-              <li><a href="#">Home shows</a></li>
+              <li><a href="#">Home Shows</a></li>
             </ul>
           </li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -48,8 +47,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Property Single</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1>Property Details</h1>
+              <p class="mb-0">Explore this beautiful property located in the heart of Chicago. Whether you're looking for a place to call home or an investment opportunity, this property offers modern amenities, spacious living areas, and a vibrant neighborhood.</p>
             </div>
           </div>
         </div>
@@ -58,13 +57,13 @@
         <div class="container">
           <ol>
             <li><a href="{% url 'index' %}">Home</a></li>
-            <li class="current">Property Single</li>
+            <li class="current">Property Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Real Estate 2 Section -->
+    <!-- Real Estate Section -->
     <section id="real-estate-2" class="real-estate-2 section">
 
       <div class="container" data-aos="fade-up">
@@ -92,15 +91,15 @@
           <div class="swiper-wrapper align-items-center">
 
             <div class="swiper-slide">
-              <img src="assets/img/property-slide/property-slide-1.jpg" alt="">
+              <img src="{% static 'assets/img/property-slide/property-slide-1.jpg' %}" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/property-slide/property-slide-2.jpg" alt="">
+              <img src="{% static 'assets/img/property-slide/property-slide-2.jpg' %}" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/property-slide/property-slide-3.jpg" alt="">
+              <img src="{% static 'assets/img/property-slide/property-slide-3.jpg' %}" alt="">
             </div>
 
           </div>
@@ -114,25 +113,21 @@
           <div class="col-lg-8" data-aos="fade-up">
 
             <div class="portfolio-description">
-              <h2>This is an example of propery details</h2>
+              <h2>Stunning 4-Bedroom Family Home in Chicago</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                This property features a modern open-plan layout, combining a stylish kitchen, spacious living room, and cozy dining area. Natural light floods the rooms, enhancing the welcoming atmosphere. Each bedroom is designed for comfort, with ample storage and modern finishes.
               </p>
               <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
-              </p>
-
-              <p>
-                Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
+                Conveniently located near schools, parks, and shopping centers, this property offers a perfect blend of urban convenience and suburban tranquility. Enjoy a private backyard, a garage, and updated appliances that make this home move-in ready.
               </p>
 
               <p>
-                Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
+                Additional amenities include high-speed internet, a smart home system, and a security system to ensure peace of mind. This is a prime opportunity for buyers looking for both a comfortable living space and a sound investment.
               </p>
 
               <div class="testimonial-item">
                 <p>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>"Working with this agency has been a fantastic experience. They ensured that every detail was perfect, and I couldn't be happier with my new home."</span>
                 </p>
                 <div>
                   <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
@@ -153,11 +148,11 @@
             <div class="tab-content">
 
               <div class="tab-pane fade show active" id="real-estate-2-tab1">
-
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/sample-video-id" title="Property Video Tour" frameborder="0" allowfullscreen></iframe>
               </div><!-- End Tab 1 Content -->
 
               <div class="tab-pane fade" id="real-estate-2-tab2">
-                <img src="{% static 'assets/img/floor-plan.jpg' %}" alt="" class="img-fluid">
+                <img src="{% static 'assets/img/floor-plan.jpg' %}" alt="Floor Plan" class="img-fluid">
               </div><!-- End Tab 2 Content -->
 
               <div class="tab-pane fade" id="real-estate-2-tab3">
@@ -187,9 +182,7 @@
 
       </div>
 
-    </section><!-- /Real Estate 2 Section -->
+    </section><!-- /Real Estate Section -->
 
   </main>
   {% endblock content %}
-
-  
